@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # generate keypair
-ssh-keygen -t rsa -f privatekey -b 4096 -nodes
+ssh-keygen -t rsa -f signkey -b 4096 -N "" -A
 
 # generate pem file for public key
-openssl pkey -in my_id -pubout -out publickey.pem
-
+openssl pkey -in signkey -pubout -out publickey.pem
