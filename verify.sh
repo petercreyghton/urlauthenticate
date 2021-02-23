@@ -8,4 +8,4 @@ VERIFYFILE=$1
 source keyname
 
 # verify the file and timestamp with the public key
-cat $VERIFYFILE $VERIFYFILE.timestamp | openssl dgst -sha256 -verify my_id.pem -signature $VERIFYFILE.signature
+cat $VERIFYFILE $VERIFYFILE.timestamp | openssl dgst -sha256 -verify $KEY.pem -signature $VERIFYFILE.signature
