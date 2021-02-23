@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # set key name
-KEY=signkey
+KEY=mysignature
 echo "KEY=$KEY">keyname
 
 # generate keypair
